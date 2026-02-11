@@ -1,42 +1,14 @@
 {
   "main": {
-    "id": "1be70cee898d6694",
+    "id": "7d990a4db08f0271",
     "type": "split",
     "children": [
       {
-        "id": "b10a4a100934273b",
+        "id": "1ded1c21b169e956",
         "type": "tabs",
         "children": [
           {
-            "id": "fb41743b59eff6f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-01-28.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-01-28"
-            }
-          },
-          {
-            "id": "6fe8cf7db3849024",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
-            }
-          },
-          {
-            "id": "83390f5ed5038738",
+            "id": "49494361a15768da",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,37 +20,22 @@
               "icon": "lucide-file",
               "title": "Linux"
             }
-          },
-          {
-            "id": "c9c8df22444b633c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "General/Tmux.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tmux"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "374a8f053cd80954",
+    "id": "24c2ecb6b9fff8cb",
     "type": "split",
     "children": [
       {
-        "id": "45403c3c7bfae2b8",
+        "id": "2329c1ff69de3da6",
         "type": "tabs",
         "children": [
           {
-            "id": "8917ef433451deda",
+            "id": "c1ba74ee0ca91c7a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -91,7 +48,7 @@
             }
           },
           {
-            "id": "146575d78ae7f1af",
+            "id": "9a75759d7659f03f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -108,7 +65,7 @@
             }
           },
           {
-            "id": "f2d4d1da42174ce6",
+            "id": "f6329027e36325c0",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -121,23 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 208.5
   },
   "right": {
-    "id": "5f5f5ec5d410c815",
+    "id": "3d5bb570ab6bdbf6",
     "type": "split",
     "children": [
       {
-        "id": "35df2a72305a7d5d",
+        "id": "1beeba0060488766",
         "type": "tabs",
         "children": [
           {
-            "id": "14a716c37a4489cf",
+            "id": "310f7cd121299f5b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Untitled"
+              "title": "Backlinks for Welcome"
             }
           },
           {
-            "id": "0c32666c16b2874f",
+            "id": "0acd39290ba21983",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Untitled"
+              "title": "Outgoing links from Welcome"
             }
           },
           {
-            "id": "c6146bca40b34d2d",
+            "id": "20219a6a3ddd9f1b",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -180,7 +137,7 @@
             }
           },
           {
-            "id": "5cd156c951c6ee0d",
+            "id": "c2fe83d4ef116757",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -194,18 +151,18 @@
             }
           },
           {
-            "id": "7787165841025eb7",
+            "id": "3ecacfe551657f23",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
+                "file": "Welcome.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of Welcome"
             }
           }
         ]
@@ -226,45 +183,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "83390f5ed5038738",
+  "active": "49494361a15768da",
   "lastOpenFiles": [
-    "Exploitation/Service_Enum/FTP.md",
-    "~/GitRepos/README.md",
-    "General/Linux.md",
-    "~/GitRepos",
-    "~",
-    "Exploitation/Service_Enum/SMB.md",
-    "Exploitation/PowerShell.md",
-    "Blue_Team/Tools/Get-WinEvent.md",
-    "Blue_Team/Tools/Untitled.md",
-    "Exploitation/DLL.md",
-    "Blue_Team/Pasted image 20260208232439.png",
-    "Blue_Team/Tools/Event Tracing for Windows.md",
-    "Blue_Team/SIEM/Config Changes.md",
-    "Blue_Team/SIEM/Enable Logging.md",
-    "Blue_Team/SIEM/Untitled.md",
-    "Blue_Team/IOC/Cred Dump.md",
-    "Blue_Team/IOC/Untitled.md",
-    "Blue_Team/Tools/Process Hacker.md",
-    "Blue_Team/Tools/sysmon.md",
-    "Blue_Team/Tools/Windows Event Log.md",
-    "Blue_Team/Tools",
-    "Blue_Team/Untitled",
-    "Blue_Team/IOC/Unmanaged PowerShell.md",
-    "Blue_Team/IOC/DLL Hijacking.md",
-    "Blue_Team/SIEM/Windows Event Log.md",
-    "Blue_Team/SIEM/sysmon.md",
-    "Blue_Team/SIEM/Event Codes.md",
     "General/VIM.md",
-    "Blue_Team/IOC",
-    "Exploitation/Vulns.md",
-    "SIEM/CMD Cheatsheet.md",
-    "SIEM/Setting up.md",
-    "Blue_Team/SIEM",
-    "Blue_Team",
-    "SIEM",
-    "Pre-Engagement/OSINT",
-    "General",
-    "Untitled.canvas"
+    "Welcome.md",
+    "General/Linux.md"
   ]
 }
