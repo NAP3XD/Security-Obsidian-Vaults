@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "7d990a4db08f0271",
+    "id": "cc5689bab3428fb9",
     "type": "split",
     "children": [
       {
-        "id": "1ded1c21b169e956",
+        "id": "f0819d87cc5deead",
         "type": "tabs",
         "children": [
           {
-            "id": "49494361a15768da",
+            "id": "e6e41d32b68614ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "General/Powershell.md",
+                "file": "Tools/Get-WinEvent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Powershell"
+              "title": "Get-WinEvent"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "24c2ecb6b9fff8cb",
+    "id": "0e115a90aa6b6806",
     "type": "split",
     "children": [
       {
-        "id": "2329c1ff69de3da6",
+        "id": "b10d36a7842cb098",
         "type": "tabs",
         "children": [
           {
-            "id": "c1ba74ee0ca91c7a",
+            "id": "31a21cfca42ac897",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "9a75759d7659f03f",
+            "id": "ab310c33407412bd",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "f6329027e36325c0",
+            "id": "e5ca9243621a3140",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208.5
+    "width": 300
   },
   "right": {
-    "id": "3d5bb570ab6bdbf6",
+    "id": "1769840ea5625912",
     "type": "split",
     "children": [
       {
-        "id": "1beeba0060488766",
+        "id": "67fd2d32c8933464",
         "type": "tabs",
         "children": [
           {
-            "id": "310f7cd121299f5b",
+            "id": "fbb26ba1ffb505f0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "Tools/Get-WinEvent.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for Get-WinEvent"
             }
           },
           {
-            "id": "0acd39290ba21983",
+            "id": "8788fd83b6bbbbf4",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "Tools/Get-WinEvent.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from Get-WinEvent"
             }
           },
           {
-            "id": "20219a6a3ddd9f1b",
+            "id": "36a77a5f703150b0",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +137,7 @@
             }
           },
           {
-            "id": "c2fe83d4ef116757",
+            "id": "64e9dc8fcddcd868",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,18 +151,18 @@
             }
           },
           {
-            "id": "3ecacfe551657f23",
+            "id": "cc5e21cf9ec859f4",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "Tools/Get-WinEvent.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of Get-WinEvent"
             }
           }
         ]
@@ -183,43 +183,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "49494361a15768da",
+  "active": "e6e41d32b68614ed",
   "lastOpenFiles": [
-    "General/Linux.md",
-    "General/Powershell.md",
-    "SIEM/Setting up.md",
-    "SIEM/CMD Cheatsheet.md",
-    "General/Docker.md",
-    "Templates/04 Post Exploitation/01 Linux Priv Esc/01 Upgrade Shell/Upgrade Shell.md",
-    "Templates/03 Exploitation & Lateral Movement/03 Ligolo-ng/Ligolo-ng.md",
-    "Templates/04 Post Exploitation/01 Linux Priv Esc/01 Upgrade Shell",
-    "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications/Ffuf Vhost Fuzzing.md",
-    "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications/Ffuf Recursive Directory Fuzzing.md",
-    "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications/Ffuf Parameter Fuzzing.md",
-    "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications/Ffuf Login Bruteforce.md",
-    "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications/Ffuf Login Brute Force.md",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services/SNMP UDP 161 162.md",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services/SMTP 25 587.md",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services/SMB Attacks 445 139.md",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services/NFS Attacks 111 2049.md",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services/FTP Attacks 20 21 UDP 69.md",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services/Email Services Attacks 110 143 993 995 25 587.md",
-    "Templates/02 Recon and Enumeration/01 Network Enumeration/Initial Scans.md",
-    "Templates/03 Exploitation & Lateral Movement/03 Ligolo-ng",
-    "Templates/04 Post Exploitation/01 Linux Priv Esc",
-    "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services",
-    "Templates/02 Recon and Enumeration/01 Network Enumeration",
-    "Templates/01 Useful/Frontmatter.md",
-    "Templates/01 Useful/Add domain to hosts file.md",
-    "Templates/04 Post Exploitation",
-    "Templates/03 Exploitation & Lateral Movement",
-    "Templates/02 Recon and Enumeration",
-    "Templates/01 Useful",
-    "Reconnaissance/Tools/WMIexec.md",
-    "Reconnaissance/Tools/TCPDump.md",
-    "Reconnaissance/Tools/Responder.md",
-    "Reconnaissance/Tools/NMap.md",
-    "Reconnaissance/Tools/NC.md"
+    "IOC/DLL Hijacking.md",
+    "Tools/Get-WinEvent.md",
+    "Tools/Event Tracing for Windows.md",
+    "Tools/Windows Event Log.md",
+    "Tools/sysmon.md",
+    "Tools/Process Hacker.md",
+    "IOC/Unmanaged PowerShell.md",
+    "IOC/Logons.md",
+    "IOC/Cred Dump.md"
   ]
 }

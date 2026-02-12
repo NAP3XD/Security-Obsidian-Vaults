@@ -1,5 +1,23 @@
 [Confirmed DLL Candidates][https://www.wietzebeukema.nl/blog/hijacking-dlls-in-windows]
 
+
+### CRL.DLL
+#powershell #crlDOTdll
+
+```
+ImageLoaded: C:\Windows\System32\crl.dll
+```
+
+This usually means the process is doing **certificate validation**.
+
+Common processes that load it:
+
+- `svchost.exe`
+- `powershell.exe`
+- `CHXSmartScreen.exe`
+- `msedge.exe` / `chrome.exe`
+- `lsass.exe`
+- `wininit.exe`
 Event 7: Module load events 
 
 ## IOCs

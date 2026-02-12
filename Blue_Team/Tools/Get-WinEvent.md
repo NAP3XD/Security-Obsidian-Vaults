@@ -1,3 +1,36 @@
+[BlogExpertSearchIdeas][https://abitechhub.medium.com/a-deep-dive-walkthrough-of-the-windows-event-logs-finding-evil-skills-assessment-on-hack-the-848e4b650404]
+
+### Find Property Index on any EventID
+
+```
+// grab one
+$e = Get-WinEvent -FilterHashtable @{Id=7} -MaxEvents 1
+
+// loop
+for ($i = 0; $i -lt $e.Properties.Count; $i++) {
+    "$i : $($e.Properties[$i].Value)"
+}
+
+// use Xml to expose keys 
+$e = Get-WinEvent -FilterHashtable @{Id=10} -MaxEvents 1
+$e.ToXml()
+```
+
+## Commands 
+```
+Get-WinEvent -FilterHashtable @{Path='C:\Logs\DLLHijack\*.evtx'; Id=7} | Format-List
+
+// avaliable logs
+Get-WinEvent -ListLog * | Select-Object LogName, RecordCount, IsClassicLog, IsEnabled, LogMode, LogType | Format-Table -AutoSize
+
+// providers
+Get-WinEvent -ListProvider * | Format-Table -AutoSize
+
+// get from .evtx file, search by EventID
+Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Sysmon/Operational'; ID=1,3} | Select-Object TimeCreated, ID, ProviderName, LevelDisplayName, Message | Format-Table -AutoSize
+
+```
+
 Understanding the importance of mass analysis of Windows Event Logs and Sysmon logs is pivotal in the realm of cybersecurity, especially in Incident Response (IR) and threat hunting scenarios. These logs hold invaluable information about the state of your systems, user activities, potential threats, system changes, and troubleshooting information. However, these logs can also be voluminous and unwieldy. For large-scale organizations, it's not uncommon to generate millions of logs each day. Hence, to distill useful information from these logs, we require efficient tools and techniques to analyze these logs en masse.
 
 One of these tools is the [Get-WinEvent cmdlet](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-7.3) in PowerShell.
