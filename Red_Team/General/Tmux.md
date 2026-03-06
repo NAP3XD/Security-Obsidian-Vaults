@@ -7,9 +7,9 @@ Tmux new -s <session-name>
 
 Tmux switch -t <session-name>        // while in tmux
 
-Tmux attach -t <session-name>         // from outside tmux
+Tmux a[ttach] -t <session-name>         // from outside tmux
 
-tmux kill-session -t sessionname
+tmux kill-ses[sion] -t sessionname
 
 CB d     // detach session (still runs)
 

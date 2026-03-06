@@ -22,6 +22,7 @@ xfreerdp /u:Administrator /p:'[password]' /v:[Target IP] /dynamic-resolution
 ```
 #RDP 
 ### SMB
+[CheatSheet][https://github.com/noobosaurus-r3x/Cheat-sheets/blob/main/SMBClient%20Cheat%20Sheet.md] 
 ```
 smbclient -L //SERVER_NAME -U username
 
@@ -33,7 +34,7 @@ sudo apt install -y cifs-utils
 sudo mount -t cifs //SERVER_NAME/SHARE /mount/here \
   -o username=USERNAME,soft,vers=3.0,noauto,x-systemd.automount
 
-// basic mount cmd
+// basic mount cmd (pain if not perment share)
 sudo mount -t cifs //SERVER_NAME/SHARE /mount/here -o username=USERNAME
 
 //add to avoid lagging when share not avaliable 
@@ -97,6 +98,10 @@ Key-gen -o -t rsa -C “email or comment”
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
+### TCPDump
+```
+sudo tcpdump -ni wlx00c0caad9331 'host 1.1.1.1 and (icmp or tcp port 443)'
+```
 ### UFW
 ```
 sudo ufw status
@@ -106,14 +111,32 @@ sudo ufw status
 
 ### Port testing
 #ss
+```
+
 sudo ss -tnlp | grep postgres       // find port service running on
 
+```
 
+### Files
+```
+// delete last line of a file
+sed -i '$d' /etc/resolv.conf      
 
+// open line number #
+Vim +# /dadir/dafile.txt    
+
+nl  // number lines of files  
+// showlines from 70-105
+nl -ba /etc/nginx/sites-enabled/default | sed -n '70,105p'   
+```
   
 
 ## Web server Hosting
 #php 
+```
+// can accept POST request 
 php -S localhost:8000
 
 Python3 -m http.server <port>
+
+```

@@ -1,8 +1,14 @@
 vimtutor
 
+```
+// open line number #
+Vim +# /dadir/dafile.txt  
+```
+
 Vim  i (insert mode) esc (exit mode)  https://vimsheet.com/
 ```
 
+// Keyboard Shortcuts
 x Cut character   (add # before any cmd to multiply)
 dw Cut word
 dd Cut full line

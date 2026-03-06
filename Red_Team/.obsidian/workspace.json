@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "General/Powershell.md",
+                "file": "General/VIM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Powershell"
+              "title": "VIM"
             }
           }
         ]
@@ -186,6 +186,7 @@
   "active": "49494361a15768da",
   "lastOpenFiles": [
     "General/Linux.md",
+    "General/Tmux.md",
     "General/Powershell.md",
     "SIEM/Setting up.md",
     "SIEM/CMD Cheatsheet.md",
@@ -219,7 +220,6 @@
     "Reconnaissance/Tools/WMIexec.md",
     "Reconnaissance/Tools/TCPDump.md",
     "Reconnaissance/Tools/Responder.md",
-    "Reconnaissance/Tools/NMap.md",
-    "Reconnaissance/Tools/NC.md"
+    "Reconnaissance/Tools/NMap.md"
   ]
 }
