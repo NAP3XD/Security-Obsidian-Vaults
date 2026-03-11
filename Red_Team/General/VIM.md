@@ -16,10 +16,14 @@ yw Copy word
 yy Copy full line
 p Paste
 :1 Go to line number 1.
-:w Write the file, save
+
+:w filename  // Write the file, save as filename
+
 :q Quit
 :q! Quit without saving
 :wq Write and quit
+
+:x  // write and quite (shorter!)
 ```
 
 

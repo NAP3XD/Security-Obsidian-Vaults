@@ -4,44 +4,42 @@ Docker –help
 Docker <command> –help
 
 ## Docker compose
+```
 
 docker compose up -d      // spin up containers
-
 docker compose -f <yourfile.yml> up -d           // provide file
 
+docker compose down    // stop and deletes containers
 
+docker compose start
+docker compose stop    // just stops 
+```
 ### Basic containers tools
+```
+docker cp <container>:<path_in_container> <path_on_host>
 
 apt update
 
-apt install -y iputils-ping iproute2 net-tools curl wget   // starter tools 
+apt install -y iputils-ping iproute2 net-tools curl wget whois // starter tools 
 
-  
 
 Kali tools
 
 apt update
-
 apt install -y kali-linux-headless
-
 apt update
 
 apt install -y kali-linux-headless net-tools iproute2 iputils-ping curl wget tcpdump nmap gobuster ffuf nikto
 
   
   
-  
-  
-  
+```  
 
-Docker compose start
+### Admin
 
-Docker compose stop        // stop containers 
-
-Docker compose down       // tear down the env
 
   
-  
+
 
 Docker ps    // running containers
 
@@ -56,8 +54,6 @@ Docker inspect             // show JSON details 
 Docker logs
 
 Docker top               // running processes 
-
-  
 
 Docker cp            // copy files to and from host/container
 
@@ -86,12 +82,9 @@ Networks
 
 docker network inspect <net-name>
 
-  
-
 docker network create --driver bridge --subnet 192.168.10.0/24 <net-name>
 
   
-
 Docker images
 
 Docker inspect <img-name>
@@ -117,6 +110,7 @@ docker build -t custom-kali .        // build img
   
 
 Tools:
+apt install -y net-tools iproute2 iputils-ping dnsutils traceroute curl wget tcpdump 
 
 - iproute2 — provides ip, the modern replacement for ifconfig
     

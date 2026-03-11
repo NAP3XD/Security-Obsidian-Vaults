@@ -2,80 +2,53 @@
 
 ### Sessions
 ```
-
 Tmux new -s <session-name>
-
 Tmux switch -t <session-name>        // while in tmux
 
 Tmux a[ttach] -t <session-name>         // from outside tmux
-
 tmux kill-ses[sion] -t sessionname
-
 CB d     // detach session (still runs)
 
 CB $   // rename season 
 
 ```
 ### Window
-
-
 ```
 CB c   // new window
-
 CB ,    // rename window 
+CB &     // delete window
 
 CB p  // last active window
-
-
 ```  
-
 ### Pane
 ```
-
+CB x  // kill current pane 
 CB % // new pane vertical
-
-CB “   // split vertical 
-
+CB “   // split horizontal  
 CB [  // copy mode
-
 CB w  // se all windows
-
 CB ;   // jump to last active pane
-
 CB o  // cycle panes
-
 CB ctrl up arrow or down arrow 
 
-  
-
 CB ?   // show all keybindings 
-
 ```  
 
 ### Plug-In manage
-
 ```
 CB I    // instal new plug added to config
-
 CB R  // reload session
-
 tmux source ~/.tmux.conf   // reload session 
 ```
-  
-
 ### Copy
 ```
 CB y     // copy line
 CB Y   // copy PWD
 ```
-  
-
 ### Logging
 ```
 CB shift p   // start logging
-
 CB Alt shift p   // save logging
-
 CB Alt p   // screenshot
 ```
   
