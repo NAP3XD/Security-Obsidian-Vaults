@@ -10,9 +10,11 @@ docker compose up -d      // spin up containers
 docker compose -f <yourfile.yml> up -d           // provide file
 
 docker compose down    // stop and deletes containers
+docker compose down -v   // removes volumes (helps reset )
 
 docker compose start
 docker compose stop    // just stops 
+docker compose restart
 ```
 ### Basic containers tools
 ```
@@ -20,7 +22,7 @@ docker cp <container>:<path_in_container> <path_on_host>
 
 apt update
 
-apt install -y iputils-ping iproute2 net-tools curl wget whois // starter tools 
+apt install -y iputils-ping iproute2 net-tools curl wget whois netcat-openbsd // starter tools 
 
 
 Kali tools
@@ -40,7 +42,7 @@ apt install -y kali-linux-headless net-tools iproute2 iputils-ping curl wget tcp
 
   
 
-
+```
 Docker ps    // running containers
 
 Docker ps -a    // all containers
@@ -107,6 +109,7 @@ docker build -t custom-kali .        // build img
 
   
   
+```
   
 
 Tools:

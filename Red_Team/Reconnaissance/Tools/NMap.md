@@ -6,12 +6,12 @@
 Nmap --help  
 
 ```
-
 ## Host Discovery 
 ```
+// lower case flags!!! -sn (scan ip rantge)
 sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
-```
-Give network in CIDR
+
+// Give network in CIDR
 -sn        Disable port scanning
 -oA    stores results in all formats
 
@@ -21,8 +21,9 @@ Can provide multiple Ips
 
 -PE        // ping scan
 --packet-trace       // shows all packets sent and received
-
+```
 ## Discovering Open ports
+
 -A Agressive, service, OS, traceroute, default scripts 
 -sT   is default, uses three-way handshake TCP
 -sU   UDP scan only get a response if app configured to do so
@@ -37,7 +38,7 @@ Can provide multiple Ips
 --top-ports=`[number]`
 
 scans top 1000 TCP ports with -sS (Syn scan)
-
+''
 ## Service Enumeration
 -sV scan port for services and versions 
 -O  operating sys
@@ -51,22 +52,22 @@ sudo nmap <target> --script <category>
 sudo nmap <target> --script <script-name>,<script-name>,<...>
 ```
 
-|**Category**|**Description**|
-|---|---|
-|`auth`|Determination of authentication credentials.|
-|`broadcast`|Scripts, which are used for host discovery by broadcasting and the discovered hosts, can be automatically added to the remaining scans.|
-|`brute`|Executes scripts that try to log in to the respective service by brute-forcing with credentials.|
-|`default`|Default scripts executed by using the `-sC` option.|
-|`discovery`|Evaluation of accessible services.|
-|`dos`|These scripts are used to check services for denial of service vulnerabilities and are used less as it harms the services.|
-|`exploit`|This category of scripts tries to exploit known vulnerabilities for the scanned port.|
-|`external`|Scripts that use external services for further processing.|
-|`fuzzer`|This uses scripts to identify vulnerabilities and unexpected packet handling by sending different fields, which can take much time.|
-|`intrusive`|Intrusive scripts that could negatively affect the target system.|
-|`malware`|Checks if some malware infects the target system.|
-|`safe`|Defensive scripts that do not perform intrusive and destructive access.|
-|`version`|Extension for service detection.|
-|`vuln`|Identification of specific vulnerabilities.|
+| **Category** | **Description**                                                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `auth`       | Determination of authentication credentials.                                                                                            |
+| `broadcast`  | Scripts, which are used for host discovery by broadcasting and the discovered hosts, can be automatically added to the remaining scans. |
+| `brute`      | Executes scripts that try to log in to the respective service by brute-forcing with credentials.                                        |
+| `default`    | Default scripts executed by using the `-sC` option.                                                                                     |
+| `discovery`  | Evaluation of accessible services.                                                                                                      |
+| `dos`        | These scripts are used to check services for denial of service vulnerabilities and are used less as it harms the services.              |
+| `exploit`    | This category of scripts tries to exploit known vulnerabilities for the scanned port.                                                   |
+| `external`   | Scripts that use external services for further processing.                                                                              |
+| `fuzzer`     | This uses scripts to identify vulnerabilities and unexpected packet handling by sending different fields, which can take much time.     |
+| `intrusive`  | Intrusive scripts that could negatively affect the target system.                                                                       |
+| `malware`    | Checks if some malware infects the target system.                                                                                       |
+| `safe`       | Defensive scripts that do not perform intrusive and destructive access.                                                                 |
+| `version`    | Extension for service detection.                                                                                                        |
+| `vuln`       | Identification of specific vulnerabilities.                                                                                             |
 ## Saving Results
 -oN    Normal .nmap
 -oG     Grepable .gnmap
@@ -79,6 +80,8 @@ sudo nmap <target> --script <script-name>,<script-name>,<...>
 #ttl
 
 ## Misc
+```
+
 --max-retries   default is 10
 --min-rate 300     sets min number of packets to send per second 
 --stats-every=`[number]`s   (7s)
@@ -93,6 +96,7 @@ Decoys
 
 -S manually specify source IP address 
 -e `<interface>` sends all requests though spec interface 
+```
 **Timing**
 - `-T 0` / `-T paranoid`
 - `-T 1` / `-T sneaky`

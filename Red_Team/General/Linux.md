@@ -1,6 +1,24 @@
 [Master_Cheatsheet][https://linuxize.com/cheatsheet/]
 
 ## Files
+#### Shred
+```
+/// overwrite data to stop recovery 
+shred -v <file>
+```
+#### EncryptData
+```
+// If dir compress
+tar -czvf <newfile.tar.gz> <dir2archive>	 // flag order matters!! 
+
+// encrpyt with gpg
+gpg -c dafile.tar.gz
+
+// to unencrypt 
+gpg dafile.a.tar.gz 
+tar -xzvf a.tar.gz	   // Extract tar.gz
+
+```
 ### Create Del
 ```
 mkdir	     // Create directory
@@ -316,7 +334,10 @@ sysctl net.ipv4.ip_forward=1
 
 ### TCPDump
 ```
+tcpdump -D   // show ints avaliable for capture 
+
 sudo tcpdump -ni wlx00c0caad9331 'host 1.1.1.1 and (icmp or tcp port 443)'
+tcpdump -i <int> -X   // will show ascii and hex data
 
 // capture traffic to file 
 tcpdump -i <interface> -w capture.pcap
@@ -324,7 +345,22 @@ tcpdump -i <interface> -w capture.pcap
 // analyze file
 tcpdump -r traffic.pcap
 tcpdump -r partBclientCapture.pcap -nn -X  // heades/payload/asciII/hex
+
+tcpdump -s <numPacket2Grab> -n -i <int>  // dont resolve names, cap # of packets
+tcpdump -S  // used absolute sequence numbers (for finding in logs)
+
 ```
+Filters
+host  // capture host
+src / dest   // source or destination 
+net   192.168.0.1/24    // captures network range 
+TCP,UDP,HTTP,etc   // tcp, udp, http as example 
+proto 80   // can provide port #
+portrange 0-1024  // provides a range 
+less / greater 
+and / &&
+or 
+not 
 ### UFW
 [cheatsheet][https://linuxize.com/cheatsheet/ufw/]
 ```
@@ -500,4 +536,10 @@ php -S localhost:8000
 
 Python3 -m http.server <port>
 
+```
+## AppArmor
+```
+sudo apt install apparmor apparmor-utils
+
+sudo aa-status
 ```

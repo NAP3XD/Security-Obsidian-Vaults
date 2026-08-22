@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "General/Languages/BASH.md",
+                "file": "Reconnaissance/Tools/NMap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BASH"
+              "title": "NMap"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -185,18 +187,22 @@
   },
   "active": "49577520ccd473ed",
   "lastOpenFiles": [
+    "General/Docker.md",
+    "Reconnaissance/Tools/NMap.md",
     "General/Linux.md",
+    "General/Juypter.md",
+    "2026-02-02.md",
+    "2026-01-30.md",
+    "2026-01-28.md",
+    "General/Languages/BASH.md",
     "General/Tmux.md",
     "General/VIM.md",
-    "General/Docker.md",
     "General/Powershell.md",
     "General/GIT.md",
-    "General/Languages/BASH.md",
     "Exploitation/Vulns.md",
     "Exploitation/DLL.md",
     "Exploitation/Web_Enum/Verb Tamper.md",
     "Exploitation/Web_Enum/Webshells.md",
-    "Reconnaissance/Tools/NMap.md",
     "General/Languages/Python.md",
     "General/Languages/PHP.md",
     "General/Languages",
@@ -209,10 +215,6 @@
     "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications/Ffuf Recursive Directory Fuzzing.md",
     "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications/Ffuf Parameter Fuzzing.md",
     "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications/Ffuf Login Bruteforce.md",
-    "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications/Ffuf Login Brute Force.md",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services/SNMP UDP 161 162.md",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services/SMTP 25 587.md",
-    "Templates/03 Exploitation & Lateral Movement/01 Attacking Common Services/SMB Attacks 445 139.md",
     "Templates/03 Exploitation & Lateral Movement/03 Ligolo-ng",
     "Templates/04 Post Exploitation/01 Linux Priv Esc",
     "Templates/03 Exploitation & Lateral Movement/02 Attacking Web Applications",
